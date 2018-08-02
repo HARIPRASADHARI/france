@@ -1,0 +1,54 @@
+@import '_settings';
+
+@import 'foundation';
+@include foundation-everything;
+@include foundation-everything($prototype: true);
+
+@include foundation-flex-classes;
+@include foundation-flex-grid;
+
+
+
+
+
+
+@import '_variable';
+@import '_menu';
+
+@import '_home';
+@import '_button';
+
+@import '_money';
+
+@import '_foreign';
+@import '_visa';
+@import '_recharge';
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    min-height: 100%;
+    color: #2C3238;
+    background: url('../img/pattern.png') repeat 50%;
+    background-size: 14px;
+}
+html{
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    height: 100%;
+}
+
+p{
+    // font-family: 'Nunito'; 
+    color: #6F7982;
+    
+}
+    
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
+    // font-family: 'Prata';
+    color: #2C3238;
+}    
+
+
+

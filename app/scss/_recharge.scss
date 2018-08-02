@@ -1,0 +1,108 @@
+.ae_r {
+    .cell {
+        min-height: 300px;
+        h2 {
+            color: $recharge;
+            position: relative;
+        }
+        
+        span {
+            background-color: $recharge;
+            border-color: $recharge;
+            box-shadow: 0 0 10px 0 $recharge; //@include flex;
+            display: inline-block;
+            position: relative;
+            color: #FFF;
+            outline: 0;
+            padding: 0 0;
+            font-size: 1.875rem;
+            line-height: 1.875rem;
+            border-radius: 15px;
+            width: 70px;
+            height: 70px;
+            min-width: 60px;
+            margin: 1em auto 0.5em auto;
+            i {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                font-size: 2rem;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    .ae_recharge_list {
+        ul {
+            list-style-type: none;
+            margin-left: 0;
+            li {
+                margin-bottom: 1rem;
+                &:before {
+                    background-image: url("../img/cellphone-android.svg");
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    content: "";
+                    display: inline-block;
+                    margin: -10px 16px 0 0;
+                    width: 25px;
+                    -webkit-box-flex: 1;
+                    -ms-flex: 1 0 23px;
+                    flex: 1 0 23px;
+                    height: 25px;
+                    position: absolute;
+                }
+                .ae_recharge_each {
+                    display: inline-block;
+                    margin-left: 1.75em;
+                    h3 {
+                        font-size: 1rem;
+                        line-height: .5rem;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ae_r_slider_overlay{
+    position: relative;
+        &:before {
+            width: 95%;
+            height: 100%;
+            background: #F7F7F7;
+            content: '';
+            position: absolute;
+            right: 22.48%;
+            bottom: 8%;
+            z-index: -1;
+            opacity: 0.7;
+        }
+        &:after {
+            background: url("../img/overlay.svg") no-repeat center center;
+            position: absolute;
+            left: 57.70%;
+            top: -8px;
+            content: '';
+            display: block;
+            width: 926.77px;
+            height: 921.93px; // opacity: 0.9;
+        }
+}
+
+.ae_r_svg{
+    position: absolute;
+    top: -48%;
+    opacity: 0.1;
+    width: 302px;
+    left: 50%;
+    @include rotate(30);
+}
+
+.ae_r_svg_one{
+    position: absolute;
+    top: 25%;
+    left: -10%;
+    opacity: 0.1;
+    @include rotate(30);
+}
